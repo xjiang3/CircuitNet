@@ -1,57 +1,7 @@
-# CircuitNet: An Open-Source Dataset for Machine Learning Applications in Electronic Design Automation (EDA)
+# CircuitNet 2.0: An Advanced Dataset for Promoting Machine Learning Innovations in Realistic Chip Design Environment
 
-## Overview
+This repository is intended to hosts codes for the review process of CircuitNet 2.0.
 
-This repository is intended to hosts codes and demos for CircuitNet, we hope this codebase would be helpful for users to reproduce exiting methods. More information about the dataset can be accessed from our web page [https://circuitnet.github.io/](https://circuitnet.github.io/).
-
-<p align="center">
-  <img src="assets/overall_structure.png" height=300>
-</p>
-
---------
-
-## ChangeLog
-
-- 2023/7/24
-
-  Code for feature extraction released. Users can use it to implement self-defined features with the LEF/DEF we released or extract features with LEF/DEF from other sources. Read the [REAME](https://github.com/circuitnet/CircuitNet/blob/main/feature_extraction/README.md) for more information.
-
-- 2023/6/29
-
-  Code for net delay prediction released. A simple tutorial on net delay prediction is added to [our website](https://circuitnet.github.io/tutorial/experiment_tutorial.html#Net_Delay).
-
-
-- 2023/6/14
-
-  The original dataset is renamed to CircuitNet-N28, and timing features are released.
-
-  New dataset CircuitNet-N14 is released, supporting congestion, IR drop and timing prediction.
-
-- 2023/3/22 
-
-  LEF/DEF is updated to include tech information (sanitized). Each tarfile contains 500 DEF files and can be decompressed separately. We also provide example DEF files.
-  
-  Congestion features and graph features generated from ISPD2015 benchmark are available in the ISPD2015 dir in [Google Drive](https://drive.google.com/drive/u/1/folders/1GjW-1LBx1563bg3pHQGvhcEyK2A9sYUB) and [Baidu Netdisk](https://pan.baidu.com/s/1udXVZnfjqniH9paKfyc2eQ?pwd=ijdh).
-  
-- 2022/12/29 
-
-  LEF/DEF (sanitized) are available in the LEF&DEF dir in [Google Drive](https://drive.google.com/drive/u/1/folders/1GjW-1LBx1563bg3pHQGvhcEyK2A9sYUB) and [Baidu Netdisk](https://pan.baidu.com/s/1udXVZnfjqniH9paKfyc2eQ?pwd=ijdh).
-
-- 2022/12/12 
-
-  Graph features are available in the graph_features dir in [Google Drive](https://drive.google.com/drive/u/1/folders/1GjW-1LBx1563bg3pHQGvhcEyK2A9sYUB) and [Baidu Netdisk](https://pan.baidu.com/s/1udXVZnfjqniH9paKfyc2eQ?pwd=ijdh).
-
-- 2022/9/6 
-
-  Pretrained weights are available in [Google Drive](https://drive.google.com/drive/folders/10PD4zNa9fiVeBDQ0-drBwZ3TDEjQ3gmf?usp=sharing) and [Baidu Netdisk](https://pan.baidu.com/s/1dUEt35PQssS7_V4fRHwWTQ?pwd=7i67).
-
-
-- 2022/8/1 
-  
-  First release.
-
-
-  
 ## Prerequisites
 
 Dependencies can be installed using pip:
@@ -69,8 +19,7 @@ Our experiments run on Python 3.9 and PyTorch 1.11. Other versions should work b
 ## Congestion, DRC, IR drop prediction
 
 ### Data Preparation
-
-Please follow the instructions on the [download page](https://circuitnet.github.io/intro/download.html) to set up the CircuitNet dataset for a specific task(Congestion/DRC/IR Drop).
+Dataset Link: https://drive.google.com/drive/folders/1gdV8cKMFQHwuzOw2qu-ORPA9wyt2lmJc?usp=drive_link
 
 ### Example Usage:
 
@@ -143,28 +92,3 @@ where TEST_ITERATION is the specific iteration for testing, corresponding to the
 ## License
 
 This repository is released under the BSD 3-Clause. license as found in the LICENSE file.
-
-## Citation
-
-If you think our work is useful, please feel free to cite our [paper](https://ieeexplore.ieee.org/document/10158384)😆 .
-
-```
-@ARTICLE{10158384,
-  author={Chai, Zhuomin and Zhao, Yuxiang and Liu, Wei and Lin, Yibo and Wang, Runsheng and Huang, Ru},
-  journal={IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems}, 
-  title={CircuitNet: An Open-Source Dataset for Machine Learning in VLSI CAD Applications with Improved Domain-Specific Evaluation Metric and Learning Strategies}, 
-  year={2023},
-  doi={10.1109/TCAD.2023.3287970}}
-}
-```
-
-## Contact
-
-For any questions, please do not hesitate to contact us.
-
-```
-Zhuomin Chai: zhuominchai@whu.edu.cn
-Xun Jiang: jiangx2015@gmail.com
-Yuxiang Zhao: yuxiangzhao@stu.pku.edu.cn
-Yibo Lin: yibolin@pku.edu.cn
-```

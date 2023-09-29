@@ -1,6 +1,6 @@
 # CircuitNet 2.0: An Advanced Dataset for Promoting Machine Learning Innovations in Realistic Chip Design Environment
 
-This repository is intended to hosts codes for the review process of CircuitNet 2.0.
+**This repository is intended to hosts codes for the review process of CircuitNet 2.0.**
 
 ## Prerequisites
 
